@@ -8,9 +8,8 @@ body {
 p {
   margin: 0px;
 }
-.main-container{
+.main-container {
   margin-top: 20px;
-
 }
 .container {
   display: flex;
@@ -46,7 +45,8 @@ p {
   max-width: 600px;
   border-radius: 2px;
   cursor: pointer;
-margin-top: 20px;
+  margin-top: 20px;
+  position: relative;
 }
 
 .product-name {
@@ -67,7 +67,7 @@ margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .radio-labels {
@@ -94,7 +94,7 @@ margin-top: 20px;
   align-items: center;
   flex-direction: row;
 }
-.calculationDiv{
+.calculationDiv {
   width: 50%;
   max-width: 600px;
 
@@ -102,24 +102,23 @@ margin-top: 20px;
   justify-content: space-between;
   flex-direction: row;
   padding: 10px;
-
 }
-.calculationDiv h2{
+.calculationDiv h2 {
   color: #ff6b82;
   font-size: 16px;
   font-weight: bold;
 }
-.calculationDiv span{
+.calculationDiv span {
   color: black;
   font-size: 18px;
   font-weight: bold;
 }
-.AddToCart{
+.AddToCart {
   width: 50%;
   max-width: 600px;
   padding: 10px;
 }
-.AddToCart button{
+.AddToCart button {
   width: 100%;
   padding: 20px;
   background-color: #ff6b82;
@@ -137,7 +136,7 @@ margin-top: 20px;
   position: relative;
   margin-right: 15px;
 }
-.varient-box{
+.varient-box {
   display: flex;
   flex-direction: row;
   width: 30%;
@@ -148,17 +147,17 @@ margin-top: 20px;
 .radio {
   outline: none;
   cursor: pointer;
-  content: url('./check.png');
+  content: url("./check.png");
   position: relative;
   width: 1rem;
   height: 1rem;
   -webkit-appearance: none;
 }
 
-.radio:checked{
-   content: url('./checked.png')
+.radio:checked {
+  content: url("./checked.png");
 }
-.select-size-box{
+.select-size-box {
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -167,16 +166,19 @@ margin-top: 20px;
 select {
   margin: 5px;
   padding: 8px;
-  border: 1px solid gray; 
+  border: 1px solid gray;
 }
 .tag {
   background-color: #ff6b82;
-  color: #333;
-  float: right;  
+  color:white;
+  float: right;
   font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
+  padding: 5px;
+  position: absolute;
 }
-.radio-sub-box{
+.radio-sub-box {
   padding: 20px;
 }
 
@@ -185,24 +187,23 @@ select {
   .radio-item {
     width: 95%;
   }
-  .radio-content{
+  .radio-content {
     padding: 5px;
   }
-  .radio-sub-box{
+  .radio-sub-box {
     padding: 5px;
   }
-  .calculationDiv{
+  .calculationDiv {
     width: 95%;
   }
-  .AddToCart{
+  .AddToCart {
     width: 95%;
   }
-  .AddToCart button{
+  .AddToCart button {
     padding: 10px;
     font-size: 16px;
   }
-  .product-name{
+  .product-name {
     font-size: 16px;
   }
-
 }

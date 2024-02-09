@@ -43,10 +43,12 @@ function createRadioItem(product) {
     .join("");
   let radioItemHTML = `
       <div class="radio-item" onclick="toggleVarientBox(this)">
-        <div class="radio-sub-box">
-        
+       ${product.tags && product.tags.length > 0 ? 
+        product.tags.map(tag => `<span class="tag">${tag}</span>`).join("") 
+        : ""
+      }
+        <div class="radio-sub-box">  
           <div class="radio-content">
-
             <div class="radio-labels">
               <span class="radioWrapper">
                 <input
