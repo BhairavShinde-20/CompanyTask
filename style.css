@@ -206,4 +206,9 @@ select {
   .product-name {
     font-size: 16px;
   }
+  .tag{
+    padding: 6px;
+    font-size: 10px;
+    z-index: 99;
+  }
 }
