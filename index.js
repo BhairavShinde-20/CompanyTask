@@ -44,10 +44,7 @@ function createRadioItem(product) {
   let radioItemHTML = `
       <div class="radio-item" onclick="toggleVarientBox(this)">
         <div class="radio-sub-box">
-        ${product.tags && product.tags.length > 0 ? 
-            product.tags.map(tag => `<span class="tag">${tag}</span>`).join("") 
-            : ""
-        }
+        
           <div class="radio-content">
 
             <div class="radio-labels">
@@ -115,32 +112,6 @@ function Total() {
           `;
   return calculateDiv;
 }
-// let isDoubleClicked = false;
-
-// let currentOpenItem = null;
-
-// function toggleVarientBox(element) {
-//   const varientBox = element.querySelector(".varient-box");
-//   const radio = element.querySelector(".radio");
-
-//   if (currentOpenItem && currentOpenItem !== element) {
-//     const prevVarientBox = currentOpenItem.querySelector(".varient-box");
-//     prevVarientBox.style.display = "none";
-//     currentOpenItem.style.border = "1px solid gray";
-//   }
-
-//   if (varientBox.style.display === "none") {
-//     varientBox.style.display = "flex";
-//     element.style.border = "2px solid #ff6b82";
-//     radio.checked = true;
-//     currentOpenItem = element;
-//   } else {
-//     varientBox.style.display = "none";
-//     element.style.border = "1px solid gray";
-//     currentOpenItem = null;
-//   }
-// }
-
 let currentOpenItem = null;
 
 function toggleVarientBox(element) {
@@ -183,3 +154,9 @@ function renderRadioItems() {
 
 
 renderRadioItems();
+
+
+// ${product.tags && product.tags.length > 0 ? 
+//   product.tags.map(tag => `<span class="tag">${tag}</span>`).join("") 
+//   : ""
+// }
